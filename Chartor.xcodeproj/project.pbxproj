@@ -10,6 +10,7 @@
 		352E5151201779C8004B7643 /* Chartor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 352E5147201779C8004B7643 /* Chartor.framework */; };
 		352E5156201779C8004B7643 /* ChartorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 352E5155201779C8004B7643 /* ChartorTests.swift */; };
 		352E5158201779C8004B7643 /* Chartor.h in Headers */ = {isa = PBXBuildFile; fileRef = 352E514A201779C8004B7643 /* Chartor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		359A1D4520177B9100992A75 /* Chartor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 359A1D4420177B9100992A75 /* Chartor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +30,7 @@
 		352E5150201779C8004B7643 /* ChartorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChartorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		352E5155201779C8004B7643 /* ChartorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartorTests.swift; sourceTree = "<group>"; };
 		352E5157201779C8004B7643 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		359A1D4420177B9100992A75 /* Chartor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chartor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +75,7 @@
 			children = (
 				352E514A201779C8004B7643 /* Chartor.h */,
 				352E514B201779C8004B7643 /* Info.plist */,
+				359A1D4320177B7A00992A75 /* Source */,
 			);
 			path = Chartor;
 			sourceTree = "<group>";
@@ -84,6 +87,14 @@
 				352E5157201779C8004B7643 /* Info.plist */,
 			);
 			path = ChartorTests;
+			sourceTree = "<group>";
+		};
+		359A1D4320177B7A00992A75 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				359A1D4420177B9100992A75 /* Chartor.swift */,
+			);
+			path = Source;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -148,6 +159,7 @@
 				TargetAttributes = {
 					352E5146201779C8004B7643 = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 					};
 					352E514F201779C8004B7643 = {
@@ -196,6 +208,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				359A1D4520177B9100992A75 /* Chartor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -334,6 +347,7 @@
 		352E515C201779C8004B7643 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -346,6 +360,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.bizersoft.Chartor;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -354,6 +369,7 @@
 		352E515D201779C8004B7643 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -374,6 +390,7 @@
 		352E515F201779C8004B7643 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = ChartorTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -387,6 +404,7 @@
 		352E5160201779C8004B7643 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = ChartorTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
